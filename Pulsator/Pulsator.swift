@@ -12,8 +12,8 @@ import UIKit
 public typealias Color = UIColor
     
 internal let screenScale = UIScreen.main.scale
-internal let applicationWillBecomeActiveNotfication = NSNotification.Name.UIApplicationWillEnterForeground
-internal let applicationDidResignActiveNotification = NSNotification.Name.UIApplicationDidEnterBackground
+internal let applicationWillBecomeActiveNotfication = UIApplication.willEnterForegroundNotification
+internal let applicationDidResignActiveNotification = UIApplication.didEnterBackgroundNotification
 #elseif os(macOS)
 import Cocoa
 public typealias Color = NSColor
